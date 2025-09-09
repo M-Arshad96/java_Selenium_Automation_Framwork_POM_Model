@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[App launch successfully]]>
+    </line>
+    <line>
+      <![CDATA[Navigate  successfully]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-04-15T21:25:31 IST" name="Default suite" finished-at="2024-04-15T21:27:11 IST" duration-ms="99876">
+    <groups>
+    </groups>
+    <test started-at="2024-04-15T21:25:31 IST" name="Default test" finished-at="2024-04-15T21:27:11 IST" duration-ms="99876">
+      <class name="com.nextgen.testcases.TC01RegisterPage">
+        <test-method signature="launchApp()[pri:1, instance:com.nextgen.testcases.TC01RegisterPage@57cf54e1]" started-at="2024-04-15T21:25:32 IST" name="launchApp" finished-at="2024-04-15T21:26:48 IST" duration-ms="75265" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[App launch successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="navigationToRegisterDemo()[pri:2, instance:com.nextgen.testcases.TC01RegisterPage@57cf54e1]" started-at="2024-04-15T21:26:48 IST" name="navigationToRegisterDemo" finished-at="2024-04-15T21:26:55 IST" duration-ms="7175" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate  successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- navigationToRegisterDemo -->
+        <test-method signature="RegisterDemo()[pri:3, instance:com.nextgen.testcases.TC01RegisterPage@57cf54e1]" started-at="2024-04-15T21:26:55 IST" name="RegisterDemo" finished-at="2024-04-15T21:27:11 IST" duration-ms="16109" status="FAIL">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[class org.openqa.selenium.By$ById cannot be cast to class org.openqa.selenium.WebElement (org.openqa.selenium.By$ById and org.openqa.selenium.WebElement are in unnamed module of loader 'app')]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: class org.openqa.selenium.By$ById cannot be cast to class org.openqa.selenium.WebElement (org.openqa.selenium.By$ById and org.openqa.selenium.WebElement are in unnamed module of loader 'app')
+at com.nextgen.pages.RegisterDemoPage.selectTimeHH(RegisterDemoPage.java:152)
+at com.nextgen.testcases.TC01RegisterPage.RegisterDemo(TC01RegisterPage.java:67)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterDemo -->
+      </class> <!-- com.nextgen.testcases.TC01RegisterPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
